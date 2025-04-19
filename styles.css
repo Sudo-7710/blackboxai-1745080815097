@@ -1,0 +1,59 @@
+/* Custom styles for attractive background and smooth animations */
+
+body {
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  transition: background 0.5s ease;
+}
+
+body.dark {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+button, .tab-btn, .menu-item {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover, .tab-btn:hover, .menu-item:hover {
+  background-color: #3b82f6; /* Tailwind blue-500 */
+  color: white;
+}
+
+.mood-btn {
+  transition: transform 0.2s ease;
+}
+
+.mood-btn:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f4f8;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3b82f6;
+  border-radius: 4px;
+}
+
+body.dark::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+body.dark::-webkit-scrollbar-thumb {
+  background-color: #2563eb;
+}
